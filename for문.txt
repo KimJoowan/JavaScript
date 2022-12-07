@@ -8,7 +8,7 @@ let a = [10, 20, 30];
 for(let item of a){
     if(item % 2 == 0)
         console.log(item)  
-}
+} 
 
 for in문
 let userInfo = {name: 'Kang JaeSeong',age: 30,ddress: 'Busan'};
