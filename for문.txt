@@ -3,23 +3,20 @@ for (let num = 1; num <= 100; num++ ){
     console.log(num)
 }
 
-forof문
-
-let iterable = [10, 20, 30];
-for (let value of iterable) {
-  console.log(value); // 10, 20, 30
+for off문
+let a = [10, 20, 30];
+for(let item of a){
+    if(item % 2 == 0)
+        console.log(item)  
 }
 
-forin문
-
+for in문
 let userInfo = {name: 'Kang JaeSeong',age: 30,ddress: 'Busan'};
-
 for (let key in userInfo) {
   console.log(`${key}: ${userInfo[key]}`);
 }
 
-foreEach문
- 
+for Each문
 let num = 10;
 let arrNum = [1, 2, 3];
 
