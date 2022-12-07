@@ -19,7 +19,7 @@ for (let key in userInfo) {
 }
 
 foreEach문
-
+ 
 let num = 10;
 let arrNum = [1, 2, 3];
 
