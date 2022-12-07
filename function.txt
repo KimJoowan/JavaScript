@@ -1,0 +1,30 @@
+함수정의 
+//================================================
+선언적 함수
+function double(n=0){ //매개변수 초기화
+    return n*2
+}
+익명 함수
+let double = function(n){
+    return n*2
+}
+let max = function(a,b){
+    if(a>b)
+        return a
+    else 
+        return b    
+}
+let max3 = function(a,b,c){
+    return max(max(a,b),c)   
+}
+let maxValue = function(array){
+    max = array[0];
+    let i = 1;
+    for(i of array){
+        if(max<i)
+            max = i;
+    } 
+    return max;
+}
+//================================================
+
