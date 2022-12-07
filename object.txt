@@ -1,0 +1,19 @@
+객체 
+let st={
+    'fruits':'apple',
+    'ton': 10,
+    'quantity':20,
+    'price':100000,
+    'country':'중국',
+};
+//=====================================================================================================================================
+function price(fruits,ton,quantity,price,country){
+    this.fruits = fruits;
+    this.ton = ton;
+    this.quantity = quantity;
+    this.price = price;
+    this.country = country;
+    intro:function(){
+        console.log(`${this.fruits}의무게와수량은${this.ton}(kg)${this.quantity}입니다`);
+    }
+}
