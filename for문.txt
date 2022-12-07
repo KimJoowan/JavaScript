@@ -1,0 +1,30 @@
+for문
+for (let num = 1; num <= 100; num++ ){
+    console.log(num)
+}
+
+forof문
+
+let iterable = [10, 20, 30];
+for (let value of iterable) {
+  console.log(value); // 10, 20, 30
+}
+
+forin문
+
+let userInfo = {name: 'Kang JaeSeong',age: 30,ddress: 'Busan'};
+
+for (let key in userInfo) {
+  console.log(`${key}: ${userInfo[key]}`);
+}
+
+foreEach문
+
+let num = 10;
+let arrNum = [1, 2, 3];
+
+arrNum.forEach(num => {
+  console.log(`num: ${num}`);
+});
+
+console.log(`num: ${num}`);
