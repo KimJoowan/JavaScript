@@ -7,7 +7,7 @@ for off문
 let a = [10, 20, 30];   
 for(let item of a){  //배열 a에서 하나씩 꺼내
     if(item % 2 == 0)  // 짝수이면 출력
-        console.log(item)  
+        console.log(item)   
 } 
 
 for-in문
