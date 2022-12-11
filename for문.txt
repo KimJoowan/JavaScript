@@ -25,3 +25,4 @@ arrNum.forEach(num => {
 });
 
 console.log(`num: ${num}`);
+
