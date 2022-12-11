@@ -1,0 +1,27 @@
+for문
+for (let num = 1; num <= 100; num++ ){
+    console.log(num)
+}
+
+for off문
+let a = [10, 20, 30];
+for(let item of a){
+    if(item % 2 == 0)
+        console.log(item)  
+} 
+
+for in문
+let userInfo = {name: 'Kang JaeSeong',age: 30,ddress: 'Busan'};
+for (let key in userInfo) {
+  console.log(`${key}: ${userInfo[key]}`);
+}
+
+for Each문
+let num = 10;
+let arrNum = [1, 2, 3];
+
+arrNum.forEach(num => {
+  console.log(`num: ${num}`);
+});
+
+console.log(`num: ${num}`);
