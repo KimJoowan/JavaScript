@@ -1,22 +1,64 @@
 for문
+
 for (let num = 1; num <= 100; num++ ){    //기본 for문
     console.log(num)
 }
 
+let result = 0;
+for (let i = 0; i < 101; i++){ //  2씩 증가한다.
+    result += i;  // 짝수로 나온 값들을 result에 담는다.
+}
+console.log(result);
+
+//구구단
+for (let i = 2; i < 10; i++ ){           
+        for(let j = 1; j < 10; j++){             
+            console.log(` ${i} X ${j} = ${i*j}`)
+        }
+    }  
+//==================================================================================
 for off문
+
 let a = [10, 20, 30];
 for(let item of a){     //배열a에 하나씩추가한다
     if(item % 2 == 0)   //  나머지가 0일때 출력
         console.log(item)  
 } 
+function forOfArguments(a, b, c) {
+    for( argu of arguments ){
+        console.log( argu )
+    }
+}
 
+let m1= function(sample){
+    let temp = sample[0]
+    for (let i in sample) {  // for 문은 sample 배열의 길이만큼 반복해주고
+        if (temp < sample[i]){  // 만약에 temp 가 sample[i] 보다 크면
+            temp = sample[i];   // temp에 해당 sample[i] 를 할당한다
+        }	
+    }
+    console.log(temp)
+}
+//==================================================================================
 for in문
+
 let userInfo = {name: 'Kang JaeSeong',age: 30,ddress: 'Busan'}; 
 for (let key in userInfo) { // 배열userInf을 반복하여 출력한다 
     console.log(`${key}: ${userInfo[key]}`);
 }
+const myWork = {
+        title: "자바스크립트 개발자",
+        salary: 8000,
+        name: "짱구",
+        office: "판교",
+      };
 
+      for (key in myWork) {
+        console.log(key, myWork[key]);
+      }
+//==================================================================================
 for Each문
+
 let num = 10;
 let arrNum = [1, 2, 3];
 
@@ -25,3 +67,4 @@ arrNum.forEach(num => {
 });
 
 console.log(`num: ${num}`);
+//==================================================================================
