@@ -1,4 +1,4 @@
-객체 
+//객체 
 //==================================================================================
 let st={
     'fruits':'apple',
@@ -15,9 +15,13 @@ function price(fruits,ton,quantity,price,country){
     this.quantity = quantity;
     this.price = price;
     this.country = country;
-    intro:function(){
-        console.log(`${this.fruits}의무게와수량은${this.ton}(kg)${this.quantity}입니다`);
-    }
+    this.intro = function(){console.log(`과일:[${this.fruits}] 무게:[${this.ton}] 수량[${this.quantity}] 원산지[${this.quantity}]`);}
 }
 
 //==================================================================================
+let p1 = new price("사과",10,"중국",6400,20)
+let p2 = new price("바나나",10,"미국",5700,20)
+let p3 = new price("귤",10,"일본",3500,20)
+p1.intro();
+p2.intro();
+p3.intro();
